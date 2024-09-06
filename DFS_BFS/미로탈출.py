@@ -11,7 +11,7 @@ dy = [0, 0, -1, 1]
 
 def bfs(x, y):
     queue = deque()
-    queue.append((x, y))
+    queue.append((x, y)) # 
 
     while queue:
         x, y = queue.popleft()
@@ -27,3 +27,6 @@ def bfs(x, y):
                 graph[nx][ny] = graph[x][y] + 1
                 queue.append((nx, ny))
     return graph[n-1][m-1]
+
+
+print(bfs(0,0))
