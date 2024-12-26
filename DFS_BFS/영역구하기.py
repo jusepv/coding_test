@@ -29,12 +29,12 @@ for a in range(M): # y축
             x, y = q.popleft()
             cnt += 1
             for i in range(4):
-                nx = x + dx[i]
-                ny = y + dy[i]
+                r = x + dx[i]
+                c = y + dy[i]
 
-                if 0<=nx<M and 0<=ny<N and not visited[nx][ny] and graph[nx][ny] == 0:
-                    visited[nx][ny] = True
-                    q.append((nx, ny))
+                if 0<=r<M and 0<=c<N and not visited[r][c] and graph[r][c] == 0:
+                    visited[r][c] = True
+                    q.append((r, c))
             
         area_ls.append(cnt)
 
