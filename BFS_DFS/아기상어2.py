@@ -8,7 +8,6 @@ distance  = [[-1 for _ in range(M)] for _ in range(N)]
 dx = [0, 0, 1, -1, 1, 1,-1,-1]
 dy = [1, -1, 0, 0, 1,-1, 1,-1]
 
-
 q = deque()
 
 for i in range(N):
