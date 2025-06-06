@@ -20,7 +20,7 @@ while q:
     ]
     for screen, clip in arr:
         if 0<=screen<1001 and 0<=clip<1001 and not visited[screen][clip]:
-            q.append((screen,clip)) #현재 화면에 존재하는 이모티콘 수만큼 클립보드에 복사사
-            visited[screen][clip] = visited[x_screen][x_clip]+1
+            q.append((screen,clip)) # 조건 진행.
+            visited[screen][clip] = visited[x_screen][x_clip]+1 # 조건이 진행되면 시간 1초 추가
     
 print(ans)
