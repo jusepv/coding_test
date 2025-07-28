@@ -13,6 +13,8 @@ for i in range(N):
 print(dp[K])
         
 
+
+# 2차원 배열로 DP 구현
 dp = [[0] * (K+1) for _ in range(N+1)]
 
 for i in range(1, N+1):
